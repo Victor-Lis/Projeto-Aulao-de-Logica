@@ -217,58 +217,7 @@ E agora iremos colocar outro if, para exibir apenas se o usuário for maior de i
     }
 ```
 
-## Funções
-Agora vamos trabalhar de uma maneira diferente, iremos chamar uma função que irá tomar conta de exibir ou não o saldo do usuário:
-
-### Etapa 1
-Iremos declarar nossa função "exibirSaldo" para ficar responsável por essa função:
-
-Seguindo a seguindo explicação:
-- public - Acessado de todos os arquivos do projeto
-- static - Não sofrerá alteração
-- void - Não retorna nenhum valor
-- nome - Nome para chamar a função posteriormente
-- (int idade, float saldo) - São nossos parâmetros, para executar o trecho de código da função precisamos passar esses parâmetros
-
-```java
-	public static void exibirSaldo(int idade, float saldo){
-		
-	}
-```
-
-### Etapa 2
-Adicionaremos a mesma lógica de programação já aplicada no código:
-Exibiremos a idade, se a idade for maior de 18 anos ele pulará linha e exibirá o saldo, se não ele completará a mensagem de idade exibindo quanto tempo falta para o usuário ter um saldo bancário.
-```java
-	public static void exibirSaldo(int idade, float saldo){
-	    System.out.print("Você tem "+idade+" anos");
-	    if(idade >= 18){
-	        System.out.println("");
-	        System.out.println("Seu saldo é de R$"+saldo);
-	    }else{
-	        System.out.print(", em "+(18-idade)+" anos você podera ter um saldo bancário!");
-	    }
-	}
-```
-
-### Etapa 3 
-Agora iremos subistituir as mensagens de idade e saldo pela chamada da função
-#### Antes
-```java
-        System.out.println(" ");	    
-	System.out.println("Olá "+nome+", tudo bem?");
-        System.out.println("Você tem "+idade+" anos");
-        System.out.println("Seu saldo é de R$"+saldoBancario);
-```
-
-#### Depois
-```java
-        System.out.println(" ");	    
-	System.out.println("Olá "+nome+", tudo bem?");
-        exibirSaldo(idade, saldoBancario);
-```
-
-## Resultado Esperado
+### Resultado Esperado
 ```java
 import java.util.Scanner;
 
@@ -278,37 +227,29 @@ public class Main
 	    Scanner leia = new Scanner (System.in);
 	    String nome;
 	    int idade;
-        float saldoBancario = 0;
+            float saldoBancario = 0;
 	    
 	    System.out.print("Escreva seu nome: ");
 	    nome = leia.next();
 	    
 	    System.out.print("Escreva sua idade: ");
 	    idade = leia.nextInt();
-
-        if(idade < 18){
-            System.out.println("Menor de idade!");
-        }else{
-            System.out.println("Maior de idade!");
+            if(idade < 18){
+            	System.out.println("Menor de idade!");
+            }else{
+            	System.out.println("Maior de idade!");
             
-            System.out.print("Escreva seu saldo bancário: ");
-            saldoBancario = leia.nextFloat();
-        }
-
-        System.out.println(" ");	    
-	    System.out.println("Olá "+nome+", tudo bem?");
-        exibirSaldo(idade, saldoBancario);
-	}
-	
-	public static void exibirSaldo(int idade, float saldo){
-	    System.out.print("Você tem "+idade+" anos");
-	    if(idade >= 18){
-	        System.out.println("");
-	        System.out.println("Seu saldo é de R$"+saldo);
-	    }else{
-	        System.out.print(", em "+(18-idade)+" anos você podera ter um saldo bancário!");
+            	System.out.print("Escreva seu saldo bancário: ");
+            	saldoBancario = leia.nextFloat();
+            }
+        
+            System.out.println(" ");	    
+            System.out.println("Olá "+nome+", tudo bem?");
+            System.out.println("Você tem "+idade+" anos");
+            if(idade >= 18){
+		System.out.println("Seu saldo é de R$"+saldoBancario);
 	    }
-	}
+    }
 }
 ```
 
