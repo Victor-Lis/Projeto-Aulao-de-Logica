@@ -277,10 +277,14 @@ public class Main
 	- Ao fim da execução, exiba na tela as notas das provas. Exemplo: "Prova 1: 8, Prova 2: 4"
 
 ```
+
 ```
-	
+Desenvolva um algoritmo baseado no anterior onde, ao invés de avaliar a nota individual da prova, você avalie baseado na média total do aluno.
 ```
 
+```
+Faça um algoritmo que receba a idade de 5 pessoas e demonstre qual é a maior e qual é a menor na tela.
+```
 
 ## Autores
 - [@Victor Lis](https://github.com/Victor-Lis)
