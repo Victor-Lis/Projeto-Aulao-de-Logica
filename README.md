@@ -125,10 +125,10 @@ Vamos instruir o Scanner a ler o que foi digitado no tipo "Float", pois o saldo 
 ### Exibindo valores
 Após o trecho que exibe o nome do usuário iremos colocar um espaço e em seguida exibir sua idade e seu saldo:
 ```java
-System.out.println(" ");
-System.out.println("Olá "+nome+", tudo bem?");
-System.out.println("Você tem "+idade+" anos");
-System.out.println("Seu saldo é de R$"+saldoBancario);
+	System.out.println(" ");
+	System.out.println("Olá "+nome+", tudo bem?");
+	System.out.println("Você tem "+idade+" anos");
+	System.out.println("Seu saldo é de R$"+saldoBancario);
 ```
 
 ## Resultado Esperado
@@ -263,10 +263,22 @@ public class Main
 
 # Exercícios / Desafios
 ```
+   Faça um algoritmo que recebe um número e exibe seus 3 sucessores
+```
+```
+   Faça um algoritmo que recebe um número e exibe seus 3 antecessores
+```
+```
+   Faça um algoritmo que recebe um número e retorna sua metade e seu dobro
+```
+```
    Receber 2 números e descobrir o menor e o maior
 ```
 ```
    Receber um número e descobrir se ele é par ou ímpar
+```
+```
+   Coverta metros em quilometros	
 ```
 ```
    Faça um algoritmo que, receba um nome e receba uma nota, siga os seguintes requisitos:
@@ -276,14 +288,6 @@ public class Main
         - Se a nota(prova1) for menor que 4, exiba na tela "Aluno reprovado!",  
 	- Ao fim da execução, exiba na tela as notas das provas. Exemplo: "Prova 1: 8, Prova 2: 4"
 
-```
-
-```
-Desenvolva um algoritmo baseado no anterior onde, ao invés de avaliar a nota individual da prova, você avalie baseado na média total do aluno.
-```
-
-```
-Faça um algoritmo que receba a idade de 5 pessoas e demonstre qual é a maior e qual é a menor na tela.
 ```
 
 ## Autores
