@@ -177,6 +177,14 @@ Nesse próximo exemplo iremos de acordo com a idade do usuário exibir ou não s
 || | Ou
 ```
 
+```
+% | Resto de divisão
+```
+
+```
+/ | Divisão
+```
+
 ### Etapa 1
 Após o trecho em que iremos receber a idade do usuário iremos escrever if para caso a idade seja menor de 18 exibir que ele é menor de idade, ou seja menor de 18 anos:
 ```java
