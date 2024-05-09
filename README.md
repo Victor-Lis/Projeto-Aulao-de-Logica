@@ -261,6 +261,27 @@ public class Main
 }
 ```
 
+# Exercícios / Desafios
+```
+   Receber 2 números e descobrir o menor e o maior
+```
+```
+   Receber um número e descobrir se ele é par ou ímpar
+```
+```
+   Faça um algoritmo que, receba um nome e receba uma nota, siga os seguintes requisitos:
+	- Se a nota(prova1) for 7 ou mais, exiba na tela "Aluno aprovado"
+        - Se a nota(prova1) for entre 7 e 4, exiba na tela "Aluno de recuperação", nesse caso receba uma segunda nota(prova2),
+          se a segunda nota for maior que 7 exiba "Aluno aprovado, ufa!", se não exiba "Aluno reprovado!"
+        - Se a nota(prova1) for menor que 4, exiba na tela "Aluno reprovado!",  
+	- Ao fim da execução, exiba na tela as notas das provas. Exemplo: "Prova 1: 8, Prova 2: 4"
+
+```
+```
+	
+```
+
+
 ## Autores
 - [@Victor Lis](https://github.com/Victor-Lis)
 
